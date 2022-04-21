@@ -1,0 +1,20 @@
+<h1>User edit</h1>
+<div class="main-container" [formGroup]="formControlGroup">
+  <mat-form-field appearance="outline">
+    <input matInput placeholder="First name" formControlName="firstName" />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <input matInput placeholder="Second name" formControlName="secondName" />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <input matInput placeholder="Email" formControlName="email" />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <input matInput placeholder="Password" formControlName="password" />
+  </mat-form-field>
+  <div class="">
+    <button mat-raised-button color="primary" class="task-dialog-button-save">
+      Save
+    </button>
+  </div>
+</div>
