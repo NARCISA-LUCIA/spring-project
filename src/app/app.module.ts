@@ -8,16 +8,38 @@ import { UsersComponent } from './users/users.component';
 import { UserAddComponent } from './users/user-add/user-add.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 import { UserEditComponent } from './users/user-edit/user-edit.component';
+import { MatListModule } from '@angular/material/list';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatSort, MatSortModule } from '@angular/material/sort';
+import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 
 @NgModule({
-  declarations: [AppComponent, UsersComponent, UserAddComponent, UserEditComponent],
+  declarations: [
+    AppComponent,
+    UsersComponent,
+    UserAddComponent,
+    UserEditComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatCardModule,
+    MatIconModule,
     ReactiveFormsModule,
+    FormsModule,
     MatInputModule,
+    MatButtonModule,
+    MatListModule,
+    MatToolbarModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

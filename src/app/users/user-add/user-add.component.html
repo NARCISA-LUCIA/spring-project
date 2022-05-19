@@ -1,21 +1,47 @@
-<h2>Add user</h2>
+<div class="container">
+  <div class="main-container" [formGroup]="formControlGroup">
+    <mat-card-title>Sign up</mat-card-title>
+    <mat-form-field appearance="legacy">
+      <input matInput placeholder="Your Name" formControlName="firstName" />
+      <mat-icon matPrefix>person</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+      <input matInput placeholder="Your Email" formControlName="email" />
+      <mat-icon matPrefix>email</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+      <input matInput placeholder="Password" formControlName="password" />
+      <mat-icon matPrefix>lock</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+      <input
+        matInput
+        placeholder="Repeat your password"
+        formControlName="repeatPassword"
+      />
+      <mat-icon matPrefix>lock_outline</mat-icon>
+    </mat-form-field>
+    <div class="terms-service">
+      <mat-icon>crop_din</mat-icon>
 
-<div class="main-container" [formGroup]="formControlGroup">
-  <mat-form-field appearance="outline">
-    <input matInput placeholder="First name" formControlName="firstName" />
-  </mat-form-field>
-  <mat-form-field appearance="outline">
-    <input matInput placeholder="Second name" formControlName="secondName" />
-  </mat-form-field>
-  <mat-form-field appearance="outline">
-    <input matInput placeholder="Email" formControlName="email" />
-  </mat-form-field>
-  <mat-form-field appearance="outline">
-    <input matInput placeholder="Password" formControlName="password" />
-  </mat-form-field>
-  <div class="">
-    <button mat-raised-button color="primary" class="task-dialog-button-save">
-      Save
-    </button>
+      <span> I agree all statements in <span></span></span>
+      <a href="term-service">Terms of service</a>
+    </div>
+    <div class="register">
+      <button mat-raised-button color="primary">Register</button>
+    </div>
+  </div>
+  <div class="container-image">
+    <mat-card class="example-card">
+      <img
+        mat-card-lg-image
+        src="../../../assets/signup-image.jpg"
+        class="photo"
+        alt=""
+      />
+    </mat-card>
+    <mat-card class="example-text">
+      <a href="#" class="signup-image-link">I am already member</a>
+    </mat-card>
   </div>
 </div>

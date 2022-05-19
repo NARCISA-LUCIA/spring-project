@@ -17,6 +17,9 @@ export class UserAddComponent implements OnInit {
     secondName: new FormControl(''),
     email: new FormControl(''),
     password: new FormControl(''),
+    repeatPassword: new FormControl(''),
+    button: new FormControl(''),
+    photo: new FormControl(''),
   });
 
   constructor(private formBuilder: FormBuilder) {}
