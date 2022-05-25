@@ -12,6 +12,7 @@ export class UserAddComponent implements OnInit {
   userNumber: number = 30;
   userIsAdmin: boolean = true;
   user: User = new User();
+ 
   formControlGroup: FormGroup = this.formBuilder.group({
     firstName: new FormControl(''),
     secondName: new FormControl(''),

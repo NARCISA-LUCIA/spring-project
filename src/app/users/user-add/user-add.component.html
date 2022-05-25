@@ -1,47 +1,79 @@
 <div class="container">
-  <div class="main-container" [formGroup]="formControlGroup">
-    <mat-card-title>Sign up</mat-card-title>
-    <mat-form-field appearance="legacy">
-      <input matInput placeholder="Your Name" formControlName="firstName" />
-      <mat-icon matPrefix>person</mat-icon>
-    </mat-form-field>
-    <mat-form-field appearance="legacy">
-      <input matInput placeholder="Your Email" formControlName="email" />
-      <mat-icon matPrefix>email</mat-icon>
-    </mat-form-field>
-    <mat-form-field appearance="legacy">
-      <input matInput placeholder="Password" formControlName="password" />
-      <mat-icon matPrefix>lock</mat-icon>
-    </mat-form-field>
-    <mat-form-field appearance="legacy">
-      <input
-        matInput
-        placeholder="Repeat your password"
-        formControlName="repeatPassword"
-      />
-      <mat-icon matPrefix>lock_outline</mat-icon>
-    </mat-form-field>
-    <div class="terms-service">
-      <mat-icon>crop_din</mat-icon>
-
-      <span> I agree all statements in <span></span></span>
-      <a href="term-service">Terms of service</a>
+  <div class="add-container">
+    <div class="first-container">
+      <h1>
+        <span class="google-blue">G</span>
+        <span class="google-red">o</span>
+        <span class="google-orange">o</span>
+        <span class="google-blue">g</span>
+        <span class="google-green">l</span>
+        <span class="google-red">e</span>
+      </h1>
+      <h2>Create your Google Account</h2>
+      <div class="name">
+        <mat-form-field appearance="outline">
+          <mat-label>First name</mat-label>
+          <input matInput placeholder="">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Last name</mat-label>
+          <input matInput placeholder="">
+        </mat-form-field>
+      </div>
+      <div class="user-name">
+        <mat-form-field appearance="outline">
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="">
+          <mat-icon matSuffix>alternate_email </mat-icon><span matSuffix>gmail.com</span>
+          <mat-hint>You can use letters, numbers & periods</mat-hint>
+        </mat-form-field>
+      </div>
+      <a href="">Use my current email address instead</a>
+      <div class="password">
+        <div class="password-container">
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Confirm</mat-label>
+            <input matInput placeholder="">
+          </mat-form-field>
+        </div>
+        <p class="hint">Use 8 or more characters with a mix of letters, numbers & <br>symbols</p>
+      </div>
+      <mat-checkbox color="primary" selected class="checkbox"><span class="text-checkbox">Show password</span>
+      </mat-checkbox>
+      <div class="footer-button">
+        <button mat-button color="primary" class="button-sign">Sign in instead</button>
+        <button mat-flat-button color="primary" class="button-next">Next</button>
+      </div>
     </div>
-    <div class="register">
-      <button mat-raised-button color="primary">Register</button>
+    <div class="second-container">
+      <img mat-card-image src="../../../assets/Capture.PNG" alt="">
+      <mat-card-content>
+        <p>
+          One account. All of Google <span class="row">working for you.</span>
+        </p>
+      </mat-card-content>
     </div>
   </div>
-  <div class="container-image">
-    <mat-card class="example-card">
-      <img
-        mat-card-lg-image
-        src="../../../assets/signup-image.jpg"
-        class="photo"
-        alt=""
-      />
-    </mat-card>
-    <mat-card class="example-text">
-      <a href="#" class="signup-image-link">I am already member</a>
-    </mat-card>
+  <div class="third-container">
+    <div class="select-footer">
+      <select>
+        <option value="">English (United States)</option>
+        <option>Romania</option>
+      </select>
+    </div>
+    <div class="ul-list">
+      <ul>
+        <li><a href="">Help</a>
+        </li>
+        <li><a href="">Privacy</a>
+        </li>
+        <li><a href="">Terms</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>

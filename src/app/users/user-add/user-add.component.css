@@ -1,49 +1,178 @@
 .container {
-  margin: 100px 300px;
   display: flex;
-  flex-wrap: row;
-  justify-content: space-around;
-  padding: 30px 0;
-  border-radius: 10px;
-  color: aqua;
+  padding: 48px 40px 36px;
+  flex-direction: column;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
 }
 
-.main-container {
+.add-container {
+  border: 0.5px solid #c9cbd0d1;
+  border-radius: 10px;
+  display: flex;
+  padding: 40px;
+}
+
+.first-container {
+  width: 450px;
   display: flex;
   flex-direction: column;
 }
 
-.mat-card-title {
-  padding-bottom: 20px;
-  font-weight: bold;
-  font-size: 35px;
+.google-blue {
+  color: #1c74e8;
 }
 
-.mat-icon {
-  padding-right: 10px;
+.google-red {
+  color: red;
 }
 
-input {
-  padding-bottom: 5px;
+.google-orange {
+  color: orange;
 }
 
-.example-card img {
-  width: 300px;
-  height: 300px;
+.google-green {
+  color: green;
 }
 
-.register button {
-  margin-top: 20px;
-  width: 120px;
-  height: 50px;
+h2 {
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
 }
 
-.terms-service mat-icon {
+.second-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+mat-card-content {
+  font-size: 18px;
+  font-weight: 100;
   padding-top: 20px;
 }
 
-.signup-image-link {
-  color: black;
+mat-card-content p .row {
+  display: flex;
   justify-content: center;
+}
+
+.name {
+  display: flex;
+  gap: 10px;
+}
+
+mat-form-field {
+  width: 450px;
+}
+
+.user-name mat-label {
+  display: flex;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  color: #4688f1;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+}
+
+.user-name mat-icon {
+  display: flex;
+  float: left;
+}
+
+mat-hint {
+  font-size: 14px;
+}
+
+mat-form-field span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password {
+  display: flex;
+  flex-direction: column;
+}
+
+.password-container {
+  display: flex;
+  column-gap: 10px;
+}
+
+.checkbox {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-size: 16px;
+}
+
+.text-checkbox {
+  padding-left: 10px;
+}
+
+.footer-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-next {
+  background-color: #1a73e8;
+  padding: 2px 30px 2px 30px;
+  font-weight: 500;
+}
+
+.button-sign {
+  color: #4688f1;
+}
+
+.button-sign:hover {
+  color: #1c74e8;
+}
+
+.third-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-footer {
+  height: fit-content;
+}
+
+.select-footer select {
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+}
+
+ul li {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  display: flex;
+}
+
+li a {
+  color: #757575;
+  border: none;
   display: flex;
 }
