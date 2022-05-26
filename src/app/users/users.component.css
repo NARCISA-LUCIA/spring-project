@@ -14,4 +14,27 @@ table {
 td,
 th {
   width: 25%;
+  font-size: 18px;
+}
+
+th {
+  font-size: 14px;
+  font-weight: 400;
+}
+.mat-elevation-z8 {
+  margin: 20px;
+}
+
+h3 {
+  margin: 20px;
+  font-size: 26px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+button.mat-raised-button {
+  margin: 0 20px 0;
+  height: 40px;
+  width: 95px;
+  font-weight: 350;
+  font-size: 15px;
 }

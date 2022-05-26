@@ -175,4 +175,9 @@ li a {
   color: #757575;
   border: none;
   display: flex;
+  margin: 0;
+}
+
+.icon-email{
+  top:0;
 }
