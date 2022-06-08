@@ -19,6 +19,8 @@ import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { UserService } from './service/user-service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,8 +46,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatTableModule,
     MatCheckboxModule,
     MatFormFieldModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [UserService, HttpClient],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
