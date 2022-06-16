@@ -21,6 +21,11 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { UserService } from './service/user-service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { UsersProfilesComponent } from './users/users-profiles/users-profiles.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSelectModule } from '@angular/material/select';
+import {MatDividerModule} from '@angular/material/divider';
+
 
 @NgModule({
   declarations: [
@@ -28,6 +33,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     UsersComponent,
     UserAddComponent,
     UserEditComponent,
+    UsersProfilesComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +52,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     MatTableModule,
     MatCheckboxModule,
     MatFormFieldModule,
+    MatMenuModule,
+    MatSelectModule,
+    MatDividerModule,
     HttpClientModule,
   ],
   providers: [UserService, HttpClient],
